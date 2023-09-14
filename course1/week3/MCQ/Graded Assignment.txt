@@ -1,0 +1,235 @@
+1.
+Question 1
+What are the three major parts of navigation in Jetpack Compose?
+
+1 / 1 point
+
+ NavHost, NavMenu, NavStack
+
+
+
+ NavGraph, NavDrawer, NavFooter
+
+
+
+NavDrawer, NavFooter, NavController
+
+
+
+ NavGraph, NavHost, NavController
+
+
+Correct
+Correct! A NavHost is required to link a NavController with a NavGraph. A NavGraph is required by the NavHost to navigate between composables and a NavController is required to trigger navigation between screens.
+
+2.
+Question 2
+Which of the following must each NavHost be associated with?
+
+1 / 1 point
+
+A destination.
+
+
+
+ A route.
+
+
+
+ A single NavController.
+
+
+
+The NavGraph.
+
+
+Correct
+Correct! NavHost takes the NavController as an input parameter and associates it with the NavGraph.
+
+3.
+Question 3
+True or False: The object keyword is used for creating an object without creating the class. 
+
+1 / 1 point
+
+True
+
+
+
+False
+
+
+Correct
+Correct. The object keyword is commonly used in Jetpack Compose for creating routes.
+
+4.
+Question 4
+Which of the following data types are supported by Navigation? Select three that apply. 
+
+1 / 1 point
+
+ String
+
+
+Correct
+Correct! String is the default type when the type is not specified. 
+
+
+ Boolean
+
+
+Correct
+Correct! Boolean types are defined as NavType.BoolType.
+
+
+ Integer
+
+
+Correct
+Correct! Integer types are defined as NavType.IntType.
+
+
+Array
+
+
+5.
+Question 5
+In Jetpack Compose Navigation, the __________ function is used for constructing a new argument.
+
+1 / 1 point
+
+argument()
+
+
+
+navArgument()
+
+
+
+argumentNav()
+
+
+Correct
+Correct! Variables defined in a Destination can be passed to the navArgument with their type specified in the trailing lambda. 
+
+6.
+Question 6
+It is the best practice that the Bottom navigation must contain __________. 
+
+1 / 1 point
+
+one or two destinations 
+
+
+
+any number of destinations
+
+
+
+three to five destinations 
+
+
+Correct
+Correct! Bottom navigation is used for the primary destinations which need to be accessed from anywhere within the app.
+
+7.
+Question 7
+Which of the following is used for a horizontal list of an unknown number of items?
+
+1 / 1 point
+
+ LazyRow
+
+
+
+ Row
+
+
+
+ LazyColumn
+
+
+Correct
+Correct! LazyRow is similar to row, but it is used for horizontal scrolling lists.
+
+8.
+Question 8
+Which of the following is used to add spacing around the content displayed in lazy lists and grids?
+
+1 / 1 point
+
+ padding
+
+
+
+ contentPadding
+
+
+
+ Vertical Arrangement
+
+
+Correct
+Correct! Padding can be specified for the vertical and horizontal properties using dp values.
+
+9.
+Question 9
+Imagine you have defined the ProductScreen below:
+
+ 
+
+1234567891011121314
+  @Composable
+  fun ProductScreen(productNumber: Int?) {
+     Column(
+         Modifier.fillMaxSize(),
+         verticalArrangement = Arrangement.Center,
+         horizontalAlignment = Alignment.CenterHorizontally
+     ) {
+         Text(
+             text = "Inventory Number $productNumber",
+             fontSize = 33.sp
+
+Which part of the following code is responsible for passing the value of the navigation argument to ProductScreen?
+
+ ProductScreen(it.arguments?.getInt(Product.argProductNumber))
+
+0 / 1 point
+
+ .argProductNumber
+
+
+
+.getInt()
+
+
+
+ arguments
+
+
+Incorrect
+Not quite. Please review the reading 
+Navigation Examples
+.
+
+10.
+Question 10
+Which of the following best describes what a NavHost is?
+
+0 / 1 point
+
+ NavHost acts as a container for displaying the current destination.
+
+
+
+NavHost is responsible for keeping track of the back stack.
+
+
+
+NavHost is a collection of navigable destinations.
+
+
+Incorrect
+Not quite. Please review the video 
+Navigation component
+.

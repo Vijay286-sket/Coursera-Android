@@ -1,0 +1,743 @@
+1.
+Question 1
+In an Android application, which of the following is created first? 
+
+1 / 1 point
+
+Composable
+
+
+
+Activity
+
+
+
+View
+
+
+
+Fragment
+
+
+Correct
+Correct! Activity is one of the most important components of an Android application and it serves as the program entry point. An Activity is created before Fragments, Views and Composables.
+
+2.
+Question 2
+One of the fundamental differences between the traditional View system and Compose is their development philosophy. What are their approaches?
+
+0 / 1 point
+
+The View system follows the declarative approach, while Compose is based on the imperative approach to building UI.
+
+
+
+The View system follows the imperative approach, while Compose is based on the declarative approach to building UI.
+
+
+
+The View system and Compose both use the declarative approach.
+
+
+
+The View system and Compose both use the imperative approach.
+
+
+Incorrect
+Not quite. Please review the video 
+Introduction to Jetpack Compose
+.
+
+3.
+Question 3
+Which of the following composable layouts can be used in Jetpack Compose? Select all that apply. 
+
+1 / 1 point
+
+Stack
+
+
+
+Column
+
+
+Correct
+Correct! Column is one of the most used composable layouts that can be used in Jetpack Compose.
+
+
+Row
+
+
+Correct
+Correct! Row is one of the most used composable layouts that can be used in Jetpack Compose.
+
+
+Box
+
+
+Correct
+Correct! Box is one of the most used composable layouts that can be used in Jetpack Compose.
+
+4.
+Question 4
+Which of the following is the modifier that adds some space around the element?
+
+1 / 1 point
+
+Size
+
+
+
+Background
+
+
+
+Padding
+
+
+
+FillMaxWidth
+
+
+Correct
+Correct! A Padding modifier will add a spacing around all four sides of the composable.
+
+5.
+Question 5
+In the code below, what is the reason behind usage of the remember function and mutableStateOf observable?
+
+val value = remember { mutableStateOf(/*some value*/) }
+
+1 / 1 point
+
+Reset of the variable value during function call.
+
+
+
+Prevent reset of the variable value during recomposition.
+
+
+
+Reset of the variable value during recomposition.
+
+
+Correct
+Correct! To retain the value, you have to use the remember function and mutableStateOf observable. Otherwise, the function would reset the variable to its initial value.
+
+6.
+Question 6
+Which of the following are part of Jetpack navigation?
+
+Select all that apply. 
+
+1 / 1 point
+
+NavHost
+
+
+Correct
+Correct! NavHost is a container for displaying the current destination. 
+
+
+NavController
+
+
+Correct
+Correct! NavController is responsible for navigating between destinations while keeping track and manipulating the back state. 
+
+
+NavCompose
+
+
+
+NavGraph
+
+
+Correct
+Correct! Every screen display in an Android application is a destination in navigation. 
+
+7.
+Question 7
+Which lazy composable is not included in Jetpack compose?
+
+1 / 1 point
+
+LazyRow
+
+
+
+LazyButton
+
+
+
+LazyColumn
+
+
+
+LazyGrid
+
+
+Correct
+Correct! Lazy composables deal with a large number of items or items of unknown length, because they can cause performance issues. Button does not deal with lists of items, so it doesn’t have to be lazy.
+
+8.
+Question 8
+True or False: Theme is represented as a collection of attributes.
+
+1 / 1 point
+
+True 
+
+
+
+False
+
+
+Correct
+Correct! Theme is represented as a collection of attributes such as color, button height or text size.
+
+9.
+Question 9
+What numeric system is used to represent the ARGB color format?
+
+F2500FF1
+
+1 / 1 point
+
+Decimal number system
+
+
+
+Binary number system
+
+
+
+Octal number system
+
+
+
+Hexadecimal number system 
+
+
+Correct
+Correct! The colors are represented with a Hexadecimal number system. The first two characters represent the value of the Alpha channel. The first two characters also represent the value of the Alpha channel.
+
+10.
+Question 10
+What is the output of the following code?
+
+12345678910
+ var visible by remember { 
+    mutableStateOf(true) 
+} Column { 
+    AnimatedVisibility(visible = visible) { 
+    Text(text = "Hello, world!") 
+} Button(onClick = { visible = !visible }) { 
+    Text("Button ") 
+    } 
+}
+
+
+0 / 1 point
+
+The first Button click will instantly show the Text and the following Button click will have no effect.
+
+
+
+The first Button click will instantly hide the Text and the following Button click will instantly show the Text.
+
+
+
+The first Button click will start the fade in animation of the Text and following Button click will start the fade out animation of the Text.
+
+
+
+The first Button click will start the fade out animation of the Text and the following Button click will start fade in animation of the Text.
+
+
+Incorrect
+Not quite. Please review the video 
+Animated visibility
+. 
+
+11.
+Question 11
+How does an Activity enable interaction?
+
+1 / 1 point
+
+It provides a screen containing the user interface enabling interaction with UI elements.
+
+
+
+It performs calculations in the background.
+
+
+
+It provides access to device resources.
+
+
+
+It allows the user to set custom preferences.
+
+
+Correct
+Correct! An Activity is an application component that contains the user interface and represents the application screen.
+
+12.
+Question 12
+Which of the following is the name of the class used to represent a view in the traditional view system?
+
+0 / 1 point
+
+ViewGroup
+
+
+
+View
+
+
+
+ImageView
+
+
+
+TextView
+
+
+Incorrect
+Not quite. Please review the video 
+Views and Layouts
+.
+
+13.
+Question 13
+Which of the following lifecycle states does an Activity spend the most time in?
+
+1 / 1 point
+
+Created
+
+
+
+Resumed
+
+
+
+Started
+
+
+
+Paused
+
+
+Correct
+Correct! When an Activity gains focus and is ready for user interaction it is in the Resumed state.
+
+14.
+Question 14
+Which of the following classes are all UI elements subclasses of?
+
+1 / 1 point
+
+XML
+
+
+
+View
+
+
+
+ViewGroup
+
+
+
+Activity
+
+
+Correct
+Correct! Since all UI elements are subclasses of View, they share some properties.
+
+15.
+Question 15
+Which of the following is a disadvantage of using XML to create a User Interface in Android Studio?
+
+1 / 1 point
+
+XML is an inflexible language.
+
+
+
+XML cannot be transferred over networks.
+
+
+
+XML can be difficult to debug.
+
+
+
+XML can only run on devices of specific screen sizes and resolutions.
+
+
+Correct
+Correct! It can be difficult to find and fix errors as well as time consuming to maintain XML code.
+
+16.
+Question 16
+Which of the following is the process of initially generating the hierarchy of UI elements?
+
+0 / 1 point
+
+composable
+
+
+
+initialization
+
+
+
+composition
+
+
+
+recomposition
+
+
+Incorrect
+Not quite. Please review the video 
+UI with Composable functions
+.
+
+17.
+Question 17
+Which of the following annotations is used to denote a composable component?
+
+1 / 1 point
+
+@fun
+
+
+
+@Composable.
+
+
+
+@description
+
+
+
+@component
+
+
+Correct
+Correct! The @Composable annotation is used to easily create components that are modular and reusable.
+
+18.
+Question 18
+Which of the following built-in layouts in Compose places composables horizontally?
+
+1 / 1 point
+
+column
+
+
+
+box
+
+
+
+layout 
+
+
+
+row
+
+
+Correct
+Correct! For a row the main axis is the horizontal axis, so you can set the horizontal alignment.
+
+19.
+Question 19
+Which of the following annotations allows you to preview designs built with Jetpack Compose?
+
+1 / 1 point
+
+Preview
+
+
+
+@Composable
+
+
+
+@Preview
+
+
+Correct
+Correct! The @Preview annotation accepts three optional parameters: name, showDecoration and group. These optional parameters allow additional configuration of the generated preview.
+
+20.
+Question 20
+Which of the following modifiers is used to set the background color of a composable?
+
+1 / 1 point
+
+layoutColor 
+
+
+
+background
+
+
+
+backgroundColor
+
+
+
+color
+
+
+Correct
+Correct! The background modifier accepts a color object as an argument.
+
+21.
+Question 21
+Which of the following modifiers is used to set the background color of a composable?
+
+1 / 1 point
+
+color
+
+
+
+layoutColor 
+
+
+
+backgroundColor
+
+
+
+background
+
+
+Correct
+Correct! The background modifier accepts a color object as an argument.
+
+22.
+Question 22
+Which of the following is the term for the response to an event or executing a certain piece of code when an event occurs?
+
+1 / 1 point
+
+event listener
+
+
+
+handling the event
+
+
+
+user action
+
+
+
+event 
+
+
+Correct
+Correct! An example would be showing a dialog box when a user clicks or taps on a specific UI element .
+
+23.
+Question 23
+Which of the following event modifiers is used to specify a function to be executed when a user clicks a specific composable?
+
+1 / 1 point
+
+Modifier.clickable
+
+
+
+Modifier.swipeable 
+
+
+
+Modifier.draggable
+
+
+
+Modifier.selectable 
+
+
+Correct
+Correct! The clickable modifier can be used to trigger actions such as navigation or updating a composable’s state. 
+
+24.
+Question 24
+In a scenario where a user has partially completed a form, then changes their device’s orientation, the UI will be recreated. Which of the following will ensure the entered data is preserved?
+
+1 / 1 point
+
+event modifiers
+
+
+
+state
+
+
+
+a database
+
+
+
+activities
+
+
+Correct
+Correct! Whatever is displayed to the user has a state.
+
+25.
+Question 25
+What is a Scaffold in Jetpack Compose?
+
+1 / 1 point
+
+A state management library.
+
+
+
+A fixed layout.
+
+
+
+A customizable layout.
+
+
+
+A collection of presets. 
+
+
+Correct
+Correct! A Scaffold is a convenient way to combine UI patterns and Material Components.
+
+26.
+Question 26
+Which of the following keywords is used for creating an object without creating a class?
+
+1 / 1 point
+
+route
+
+
+
+interface
+
+
+
+object
+
+
+
+override
+
+
+Correct
+Correct! When implementing navigation in Jetpack Compose, destinations can be defined as objects.
+
+27.
+Question 27
+Which of the following is used to define a vertical List in Jetpack Compose?
+
+1 / 1 point
+
+Row
+
+
+
+Box
+
+
+
+Column
+
+
+
+Grid
+
+
+Correct
+Correct! A Column is a layout composable. A Row is used when you want to define a horizontal List.
+
+28.
+Question 28
+Which of the following would you use to create a horizontal scrollable List for a large or unknown number of items?
+
+1 / 1 point
+
+lazy row
+
+
+
+lazy list
+
+
+
+lazy grid
+
+
+
+lazy column
+
+
+Correct
+Correct! Lazy row takes care of scrolling and recomposing items when required.
+
+29.
+Question 29
+Which of the following allows you to separate application design details from the UI structure and behavior?
+
+0 / 1 point
+
+design systems
+
+
+
+themes
+
+
+
+composables
+
+
+
+material components
+
+
+Incorrect
+Not quite. Please review the video 
+The Theme function
+.
+
+30.
+Question 30
+Which of the following APIs can be used to make sure a composable retains its state during recomposition triggered by animation?
+
+1 / 1 point
+
+recomposition API
+
+
+
+animate*AsState API
+
+
+
+state API
+
+
+
+remember API
+
+
+Correct
+Correct! The by remember keyword can be used in a variable declaration to ensure the state value is maintained across recomposition. 
